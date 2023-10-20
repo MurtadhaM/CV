@@ -1,18 +1,19 @@
-# Use Case Diagram
+# This is an AI system train on faces and recognize them using webcam 
 
 ```plantuml
 @startuml
-left to right direction
-skinparam packageStyle rect
-actor User
-actor Admin
-actor "System Admin" as SystemAdmin
-rectangle "Use Case Diagram" {
-  User -- (Use Case 1)
-  User -- (Use Case 2)
-  Admin -- (Use Case 3)
-  SystemAdmin -- (Use Case 4)
-}
-@enduml
+Camera -> FaceRecognition: Take a picture
+FaceRecognition -> FaceRecognition: Detect faces
+FaceRecognition -> FaceRecognition: Crop faces
+FaceRecognition -> FaceRecognition: Resize faces
+FaceRecognition -> FaceRecognition: Convert to grayscale
+FaceRecognition -> FaceRecognition: Convert to numpy array
+FaceRecognition -> FaceRecognition: Recognize faces
+FaceRecognition -> FaceRecognition: Draw rectangle around faces
+FaceRecognition -> FaceRecognition: Show image
 
+
+
+
+@enduml
 ```
