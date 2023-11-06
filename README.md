@@ -21,8 +21,7 @@ This is a research project for the course Computer Vision at the University of N
 
 !define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
 
-
-
+!include ICONURL/common.puml
 
 
 
