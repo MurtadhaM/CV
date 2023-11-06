@@ -13,6 +13,9 @@ This is a research project for the course Computer Vision at the University of N
 
 ##### <p align="center"> <img src="https://img.shields.io/badge/Sequence-Diagram-purple?style=for-the-badge" width="200px"/> </p>
 
+<p align=center><img src="./assets/sequence.png" width="100%"/></p>
+
+<!-- 
 ```plantuml
 @startuml
 
@@ -26,10 +29,27 @@ This is a research project for the course Computer Vision at the University of N
 skinparam defaultTextAlignment center
 skinparam handwritten true
 skinparam class {
-  BackgroundColor Snow
+  BackgroundColor    DarkSeaGreen
   ArrowColor SeaGreen
   BorderColor SeaGreen
+  FontColor white
+  HeaderFontColor white
+  iconFontColor white
 }
+
+
+
+skinparam backgroundcolor transparent
+skinparam handwritten true
+skinparam class {
+  ArrowColor green
+  BorderColor white
+  FontColor white
+  HeaderFontColor white
+
+
+}
+
 
 
 
@@ -51,10 +71,10 @@ E -> F: Flask sends image with bounding boxes to User
 F -> E: User sees image with bounding boxes
 E -> User: User sees image with bounding boxes
 
-
+![Alt text](image-2.png)
 
 @enduml
-```
+``` -->
 - [Ubuntu Server 20.04 LTS](https://ubuntu.com/download/server)
 - [Python 3.8.5](https://www.python.org/downloads/release/python-385/)
 - [YOLOv6](https://github.com/meituan/YOLOv6)
