@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Object Detection</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--  JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--  Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--  Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href=" https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css " rel="stylesheet">    <style>
+        .container {
+            margin-top: 20px;
+        }
+        .file-name{
+            color: black !important
+            ;
+        }
+        .file-cta:hover {
+            background-color: #00d1b2;
+            color: white;
+        }
+        .preview {
+            border: 1px solid #d10057;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 10px 0px #0f0e0e;
+            /* Shadow */
+            -webkit-box-shadow: 0px 0px 10px 0px #0f0e0e;
+            -moz-box-shadow: 0px 0px 10px 0px #0f0e0e;
+            box-shadow: 0px 0px 10px 0px #0f0e0e;
+
+            
+        }
+        .disabled {
+            pointer-events: none;
+            opacity: 0.4;
+        }
+        .total {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        body{
+            background-color: #242424;
+        }
+              
+        p ,h1,h2,h3,h4,h5,h6{
+            color: white !important;
+        }
+        #submit{
+            display: none;
+        }
+    </style>
+
+    <script defer>
+       window.onload = function() {
+        let previewImage = document.querySelector('.preview');
+        previewImage.src = 'https://ml.anywhererpa.com/static/background.png'
+        let imageInput = document.getElementById("image");
+        document.getElementById("image").onchange = function() {
+            document.getElementById("submit").classList.remove("disabled");
+        };
+
+        document.getElementById("submit").onclick = function() {
+            document.getElementById("submit").classList.add("disabled");
+        };
+        let totalcount = document.querySelector('.total-count');
+        let total = document.querySelector('.total');
+    if (totalcount.innerHTML.length > 1) {
+        totalcount.style.color = 'red';
+    } else {
+        total.style.display = 'none';
+    }
+    // If the image is selected then display the name of the image
+    imageInput.addEventListener('change', function() {
+        let image = document.querySelector('.preview');
+        let file = this.files[0];
+        let reader = new FileReader();
+        reader.addEventListener('load', function() {
+            
+            
+         //   document.querySelectorAll('#image')[0].parentElement.innerText=document.querySelectorAll('#image')[0].files[0].name
+
+        }, false);
+        if (file) {
+            reader.readAsDataURL(file);
+            // Disable the the File Input
+            imageInput.disabled = true;
+            let filelabel = document.querySelectorAll(".file-cta");
+            filelabel[0].querySelectorAll('p')[0].innerText = 'Processing';  
+
+            submitImage(file);
+            image.src = 'https://miro.medium.com/v2/resize:fit:1400/1*e_Loq49BI4WmN7o9ItTADg.gif';
+        }
+    });
+
+    };
+
+    /**
+    * @param {string} image
+    * @return {string}
+    */
+    function submitImage(image) {
+        
+        let formData = new FormData();
+        formData.append('image', image);
+        axios.post('/api/detect', formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data',
+                'Access-Control-Allow-Origin': '*',
+                'Content-Disposition': 'attachment; filename='
+            }
+        }).then(function(response) {
+            console.log(response);
+            let image = document.querySelector('.preview');
+            image.src = response.data.image;
+            let totalcount = document.querySelector('.total-count');
+            totalcount.innerHTML = response.data.total_objects;
+            // unhides the total count
+            let total = document.querySelector('.total');
+            total.style.display = 'block';
+            let imageInput = document.getElementById("image");
+            let filelabel = document.querySelectorAll(".file-cta");
+            imageInput.disabled = false;
+            filelabel[0].querySelectorAll('p')[0].innerText = 'Choose Image';
+        }).catch(function(error) {
+            console.log(error);
+        });
+    }
+
+    
+    
+    </script>
+<style>
+
+</style>
+</head>
+<body>
+
+
+    
+
+      
+      </div>
+
+      <section class="hero is-fullheight is-default is-bold">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <div class="columns is-vcentered">
+                    <div class="column is-7">   <br>
+                        <p class="total  subtitle is-bold">Number of Students:                        <span class="total-count  fa-sharp fa-solid  fa-beat is-offset-1" style="color:red !important; margin-left:5px;"></span>                        </p>
+
+                        <figure class="image is-4by3">
+                            {% block body %}
+                            {% if image %}
+                            <img src={{url_for('static', filename=image)}}  class="preview">
+                        {% else %}
+                            <img src="static/output.jpg" class="preview">
+
+                        {% endif %}
+                            {% endblock %}
+                         
+                        </figure>
+                    </div>
+                    
+                    <div class="column is-4 is-offset-1">
+                        <h1 class="title is-2">
+                            YOLOv6 Object Detection: Student Counting Approach
+                        </h1>
+                       
+                        <br>
+                        <form action="/detect" method="POST" enctype="multipart/form-data">
+                            <span class="file-cta is-medium button">       <i class="fa-sharp fa-solid fa-file fa-beat is-offset-1" style="margin-right:5px; color:rgb(85, 0, 255)"></i>  
+                                <br>
+                                <p class="file-name" style="color:rgb(85, 0, 255)">Choose Image</p>
+                                <input type="file" id="image" accept="image/*"  capture="camera"  value="Process Photo" name="image" class="file-input is-medium is-info is-outlined">
+                       
+                                     
+                      
+                            </span>
+                            <br>
+                                
+                                <input class="button  is-medium is-info is-outlined disabled" value="Process Image"   type="submit" id="submit" style="margin-top:10px">
+                            </p>
+                        </form>
+                   
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="hero-foot">
+            <div class="container">
+                <div class="tabs is-centered">
+                    <p class="author" style="margin-left:45%; color:white">
+                        Murtadha Marzouq, Param Patel, Haochen Ye, Nick Yu, and Sam Aldehayyat
+                    </p>
+                    <ul>
+                                                
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+</body>
+<script defer>
+  
+
+</script>
+
+</html>
