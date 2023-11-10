@@ -41,7 +41,10 @@ function detect(){
         // <p class="total  subtitle is-bold">Number of Students:                        <span class="total-count  fa-sharp fa-solid  fa-beat is-offset-1" style="color:red !important; margin-left:5px;"></span>                        </p>
         panoramaSection.innerHTML += `<p class="total  subtitle is-bold">Total Objects Detected: <span class="total-count  fa-sharp fa-solid  fa-beat is-offset-1" style="color:red !important; margin-left:5px;">${response.data.total_objects}</span></p>`
         
-
+        /**
+         * DELETE THE IMAGES FROM THE SERVER
+         */
+        delete_image();
 
         stitchbtn.addEventListener("click", stitch);
         detectBTN.addEventListener("click", detect);
