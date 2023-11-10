@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Upload Images</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--  JQuery -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon-16x16.png">
+    <link rel="manifest" href="static/site.webmanifest">
+    <link rel="mask-icon" href="static/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--  Bootstrap -->    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href=" https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css " rel="stylesheet">
+    <link href="static/flask.css" rel="stylesheet">
+    <style>
+    </style>
+    </script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer  src="static/script.js"></script>
+    {{ toastr.include_jquery() }}
+    {{ toastr.include_toastr_css() }}
+    {{ toastr.message() }}
+</head>
+<script defer>
+      // Variables for Elements
+
+</script>
+<body >
+    <div class="app"  >
+
+        <div class="form-section" style="height:100%">
+            <h1 class="title is-1 has-text-centered">Upload Images</h1>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+
+         
+            {% endfor %}
+            {% endif %}
+            {% endwith %}
+
+            {% if ready%}
+            <form action="/upload" method="post" enctype="multipart/form-data" id="panorama-form"> 
+                <span class="file-cta is-medium button">
+                           <i class="fa-sharp fa-solid fa-file fa-beat is-offset-1" style="margin-right:5px; color:rgb(255, 0, 0)"></i>  
+                    <p class="file-name">Add more images</p>
+
+                <input type="file" name="file" class="file-input is-medium is-info is-outlined" multiple="true" id="file" accept="image/*" required>
+            </span>
+                <input type="submit" value="Upload" class="button is-large is-warning is-info is-outlined is-offset-2" >
+            </form>
+        </div>
+               
+            <div class="panorama-section"  style="width:100%;height:100%">
+                
+                <h1 class="title is-1 has-text-centered">Panorama</h1>
+             
+                <button type="submit" value="Upload" class="button is-large is-warning is-info is-fullwidth is-outlined is-offset-2" id="stitchbtn" onclick="stitch()" >Stitch Images</button>
+             
+                <!-- detect button -->
+                <button type="submit" value="detect" class="button is-large is-danger is-fullwidth is-outlined is-offset-2" id="detectbtn" onclick="detect()" style="display:none">Detect Students</button>
+
+
+
+            {% else %}
+
+            <!-- Panorama -->
+         
+            <form action="/upload" method="post" enctype="multipart/form-data" id="panorama-form"> 
+                <span class="file-cta is-medium button">
+                           <i class="fa-sharp fa-solid fa-file fa-beat is-offset-1" style="margin-right:5px; color:rgb(255, 0, 0)"></i>  
+                    <p class="file-name">Select {{ Missing }} or more images</p>
+
+                <input type="file" name="file" class="file-input is-medium is-info is-outlined" multiple="true" id="file" accept="image/*" required>
+            </span>
+                <input type="submit" value="Upload" class="button is-large is-warning is-info is-outlined is-offset-2" id="stitchbtn" >
+            </form>
+        </div>
+
+
+     
+            {% endif %}
+            
+            <div  class="images-section">
+                {% for image in images %}
+                <a href="{{ url_for('serve_image', filename=image) }}" target="_blank">
+                    <img src="{{ url_for('serve_image', filename=image) }}" />
+                </a>
+                {% endfor %}
+            </div>
+           
+
+        
+  
+</div>
+
+    </div>
+</body>
+
+</html>

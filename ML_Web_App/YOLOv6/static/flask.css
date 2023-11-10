@@ -1,0 +1,43 @@
+.container {
+            margin-top: 20px;
+        }
+        .file-name{
+            color: black !important
+            ;
+        }
+        .file-cta:hover {
+            background-color: #00d1b2;
+            color: white;
+        }
+        .preview {
+            border: 1px solid #d10057;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 0px 10px 0px #0f0e0e;
+            /* Shadow */
+            -webkit-box-shadow: 0px 0px 10px 0px #0f0e0e;
+            -moz-box-shadow: 0px 0px 10px 0px #0f0e0e;
+            box-shadow: 0px 0px 10px 0px #0f0e0e;
+
+            
+        }
+        .disabled {
+            pointer-events: none;
+            opacity: 0.4;
+        }
+        .total {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        body{
+            background-color: #242424;
+        }
+              
+        p ,h1,h2,h3,h4,h5,h6{
+            color: white !important;
+        }
+        #submit{
+            display: none;
+        }
