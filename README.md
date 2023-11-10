@@ -4,12 +4,27 @@
 This is a research project for the course Computer Vision at the University of North Carolina in Charlotte. The goal of this project is to implement student counting using an image. The model that was used is YOLOv6 and the dataset used is the [COCO dataset](https://cocodataset.org/#home). The model was trained on Google Colab and the results were tested on a local machine. The model was trained on 100 epochs and the results were tested on 100 images. The results were not as expected and the model was not able to detect students in the images. The model was able to detect people in the images but not students. The model was able to detect students.
 
 
-##### <p align="center"><a href=https://ml.anywhererpa.com> <img src="https://img.shields.io/badge/Live-Demo-purple?style=for-the-badge" width="200px"/> </a></p>
+##### <p align="center"> <img src="https://img.shields.io/badge/Results-Images-ff0000?style=for-the-badge" width="200px"/> </p>
+
+---
+#### Counting Students
+---
+
+<p align=center><img src="./Counting.gif" width="100%"/></p>
+
+####  Stitching Images Together 
+
+<p align=center><img src="./Stitch.gif" width="100%"/></p>
+
+
+---
+
+
+##### <p align="center"><a href=https://ml.anywhererpa.com> <img src="https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge" width="200px"/> </a></p>
 
 <p align=center style="font-size:25px"><a href="https://ml.anywhererpa.com">Demo</a></p>
 
-
-<p align=center><img src="https://ml.anywhererpa.com/static/background.png" width="50%"/></p>
+---
 
 ##### <p align="center"> <img src="https://img.shields.io/badge/Sequence-Diagram-purple?style=for-the-badge" width="200px"/> </p>
 
