@@ -24,6 +24,14 @@ This is a research project for the course Computer Vision at the University of N
 
 <p align=center style="font-size:25px"><a href="https://ml.anywhererpa.com">Demo</a></p>
 
+
+
+##### <p align="center"><a href=https://ml.anywhererpa.com> <img src="https://img.shields.io/badge/Live-Demo--Backup-purple?style=for-the-badge" width="200px"/> </a></p>
+
+<p align=center style="font-size:25px"><a href="https://cv.anywhererpa.com">Demo Backup Server</a></p>
+
+
+
 ---
 
 ##### <p align="center"> <img src="https://img.shields.io/badge/Sequence-Diagram-purple?style=for-the-badge" width="200px"/> </p>
