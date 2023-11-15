@@ -911,6 +911,16 @@ INPUT sec/6_results.tex
 INPUT ./sec/6_results.tex
 INPUT ./sec/6_results.tex
 INPUT sec/6_results.tex
+INPUT ./images/Before.png
+INPUT ./images/Before.png
+INPUT images/Before.png
+INPUT ./images/Before.png
+INPUT ./images/Before.png
+INPUT ./images/After.png
+INPUT ./images/After.png
+INPUT images/After.png
+INPUT ./images/After.png
+INPUT ./images/After.png
 INPUT ./sec/7_conclusion.tex
 INPUT ./sec/7_conclusion.tex
 INPUT ./sec/7_conclusion.tex
