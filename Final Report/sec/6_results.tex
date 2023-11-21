@@ -1,9 +1,8 @@
 \section{Results}
 \label{sec:results}
+The results of our efforts in this project, including the metrics of the model itself and an example of its working state, will be outlined in this section. \\
 
-This section will outline the results of our efforts in this project including the metrics of the model itself and an example of it's working state. \\
-
-We
+Our own model was initially trained, requiring a significant amount of time and effort. However, a switch was made to a pre-trained model, which presents the following metrics:\\
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{images/train.png}
@@ -11,14 +10,15 @@ We
     \label{fig:data}
 \end{figure}
 
+Our aim was to make our demo publicly available for everyone to test. Azure was utilized to host our solution and the below QR code was created that could be easily scanned, directing users straight to the tool. \\
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/QR.png}
+    \includegraphics[width=0.5\textwidth]{images/QR.jpeg}
     \caption{QR code for Demo}
     \label{fig:data}
 \end{figure}
 
-Prior to loading any images, we implemented a pre-processing step to stitch images to ensure that all the images are the same size. The images were stitched together using the OpenCV. \\
+Upon arriving at our site, two buttons will be visible: one for uploading a single image and another for uploading three or more images. In this workflow, the complete functionality is demonstrated by selecting more than three images. This selection involves pre-processing to stitch the images together, ensuring uniform size and zoom across all images. The stitching process was performed using the OpenCV Library.\\
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{images/Pre.png}
@@ -26,7 +26,7 @@ Prior to loading any images, we implemented a pre-processing step to stitch imag
     \label{fig:before}
 \end{figure}
 
-After the image is pre-processed, it is fed into the model. The image below shows the image before it is fed into the model. \\
+The figure below shows the image before it is fed into the model after performing the preprocessing and stitching. \\
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{images/Before.png}
@@ -35,7 +35,6 @@ After the image is pre-processed, it is fed into the model. The image below show
 \end{figure}
 
 The image below shows the results of the model. The model was trained for 100 epochs and the loss was 0.0001. The model that was used was pre-trained on yolov6-n variant of the YOLO family. \\
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{images/After.png}
@@ -43,4 +42,5 @@ The image below shows the results of the model. The model was trained for 100 ep
     \label{fig:after}
 \end{figure}
 
+There were 21 total students found in this classroom.
 %-------------------------------------------------------------------------
