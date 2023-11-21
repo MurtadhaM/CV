@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.3)  15 NOV 2023 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.3)  21 NOV 2023 15:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/admin/Github/CV/Final Report/main.tex"
-(/Users/admin/Github/CV/Final Report/main.tex
+**"/Users/admin/Github/CV_New/CV/Final Report/main.tex"
+(/Users/admin/Github/CV_New/CV/Final Report/main.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -393,6 +393,60 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box57
 ) (./main.aux
 
+LaTeX Warning: Label `sec:method' multiply defined.
+
+
+LaTeX Warning: Label `sec:method@cref' multiply defined.
+
+
+LaTeX Warning: Label `subsec:method' multiply defined.
+
+
+LaTeX Warning: Label `subsec:method@cref' multiply defined.
+
+
+LaTeX Warning: Label `sec:method' multiply defined.
+
+
+LaTeX Warning: Label `sec:method@cref' multiply defined.
+
+
+LaTeX Warning: Label `subsec:method' multiply defined.
+
+
+LaTeX Warning: Label `subsec:method@cref' multiply defined.
+
+
+LaTeX Warning: Label `sec:method' multiply defined.
+
+
+LaTeX Warning: Label `sec:method@cref' multiply defined.
+
+
+LaTeX Warning: Label `subsec:method' multiply defined.
+
+
+LaTeX Warning: Label `subsec:method@cref' multiply defined.
+
+
+LaTeX Warning: Label `sec:method' multiply defined.
+
+
+LaTeX Warning: Label `sec:method@cref' multiply defined.
+
+
+LaTeX Warning: Label `subsec:method' multiply defined.
+
+
+LaTeX Warning: Label `subsec:method@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:data' multiply defined.
+
+
+LaTeX Warning: Label `fig:data@cref' multiply defined.
+
+
 LaTeX Warning: Label `fig:before' multiply defined.
 
 
@@ -486,83 +540,144 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 ) (./sec/0_abstract.tex) (./sec/1_intro.tex) (./sec/2_problem.tex) (./sec/3_data.tex [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-]) (./sec/3_data_analysis.tex) (./sec/4_method.tex
-<images/Diagram-1.png, id=52, 354.32375pt x 457.71pt>
+]) (./sec/4_method.tex
+<images/Diagram-1.png, id=71, 354.32375pt x 457.71pt>
 File: images/Diagram-1.png Graphic file (type png)
 <use images/Diagram-1.png>
-Package pdftex.def Info: images/Diagram-1.png  used on input line 18.
+Package pdftex.def Info: images/Diagram-1.png  used on input line 20.
 (pdftex.def)             Requested size: 248.42812pt x 320.91862pt.
 
-Overfull \hbox (11.29218pt too wide) in paragraph at lines 18--19
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 20--21
  [][] 
  []
 
-) (./sec/6_results.tex
-<images/Pre.png, id=53, 1603.9925pt x 710.655pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sec/6_results.tex [2]
+<images/train.png, id=76, 473.77pt x 315.1775pt>
+File: images/train.png Graphic file (type png)
+<use images/train.png>
+Package pdftex.def Info: images/train.png  used on input line 8.
+(pdftex.def)             Requested size: 248.42812pt x 165.26868pt.
+
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 8--9
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/QR.jpeg, id=78, 1026.83624pt x 1026.83624pt>
+File: images/QR.jpeg Graphic file (type jpg)
+<use images/QR.jpeg>
+Package pdftex.def Info: images/QR.jpeg  used on input line 16.
+(pdftex.def)             Requested size: 248.42812pt x 248.41992pt.
+
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 16--17
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/Pre.png, id=79, 1603.9925pt x 710.655pt>
 File: images/Pre.png Graphic file (type png)
 <use images/Pre.png>
-Package pdftex.def Info: images/Pre.png  used on input line 7.
+Package pdftex.def Info: images/Pre.png  used on input line 24.
 (pdftex.def)             Requested size: 248.42812pt x 110.06363pt.
-
-Overfull \hbox (11.29218pt too wide) in paragraph at lines 7--8
- [][] 
- []
-
-<images/Before.png, id=55, 1593.955pt x 641.39626pt>
-File: images/Before.png Graphic file (type png)
-<use images/Before.png>
-Package pdftex.def Info: images/Before.png  used on input line 15.
-(pdftex.def)             Requested size: 248.42812pt x 99.96346pt.
-
-Overfull \hbox (11.29218pt too wide) in paragraph at lines 15--16
- [][] 
- []
-
-[2 <./images/Diagram-1.png (PNG copy)> <./images/Pre.png>]
-<images/After.png, id=64, 1602.98875pt x 734.745pt>
-File: images/After.png Graphic file (type png)
-<use images/After.png>
-Package pdftex.def Info: images/After.png  used on input line 24.
-(pdftex.def)             Requested size: 248.42812pt x 113.86186pt.
 
 Overfull \hbox (11.29218pt too wide) in paragraph at lines 24--25
  [][] 
  []
 
-) (./sec/7_conclusion.tex
-<images/train.png, id=65, 473.77pt x 315.1775pt>
-File: images/train.png Graphic file (type png)
-<use images/train.png>
-Package pdftex.def Info: images/train.png  used on input line 6.
-(pdftex.def)             Requested size: 248.42812pt x 165.26868pt.
 
-Overfull \hbox (11.29218pt too wide) in paragraph at lines 6--7
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/Before.png, id=80, 1593.955pt x 641.39626pt>
+File: images/Before.png Graphic file (type png)
+<use images/Before.png>
+Package pdftex.def Info: images/Before.png  used on input line 32.
+(pdftex.def)             Requested size: 248.42812pt x 99.96346pt.
+
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 32--33
  [][] 
  []
 
-) (./sec/5_team.tex
-<images/Murtadha.jpg, id=66, 737.75626pt x 737.75626pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/After.png, id=81, 1602.98875pt x 734.745pt>
+File: images/After.png Graphic file (type png)
+<use images/After.png>
+Package pdftex.def Info: images/After.png  used on input line 40.
+(pdftex.def)             Requested size: 248.42812pt x 113.86186pt.
+
+Overfull \hbox (11.29218pt too wide) in paragraph at lines 40--41
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./sec/7_conclusion.tex) (./sec/8_bib.tex [3 <./images/Diagram-1.png (PNG copy)> <./images/train.png> <./images/QR.jpeg>]) (./sec/5_team.tex
+<images/Murtadha.jpg, id=97, 737.75626pt x 737.75626pt>
 File: images/Murtadha.jpg Graphic file (type jpg)
 <use images/Murtadha.jpg>
 Package pdftex.def Info: images/Murtadha.jpg  used on input line 4.
 (pdftex.def)             Requested size: 49.68864pt x 49.67819pt.
-<images/Param.png, id=68, 3035.34pt x 3422.7875pt>
+<images/Param.png, id=99, 3035.34pt x 3422.7875pt>
 File: images/Param.png Graphic file (type png)
 <use images/Param.png>
 Package pdftex.def Info: images/Param.png  used on input line 5.
 (pdftex.def)             Requested size: 49.68864pt x 55.98784pt.
-<images/Haochen.png, id=70, 370.0224pt x 370.0224pt>
+<images/Haochen.png, id=101, 370.0224pt x 370.0224pt>
 File: images/Haochen.png Graphic file (type png)
 <use images/Haochen.png>
 Package pdftex.def Info: images/Haochen.png  used on input line 6.
 (pdftex.def)             Requested size: 49.68864pt x 49.6855pt.
-<images/Sam.png, id=72, 5.05771pt x 5.05771pt>
+<images/Sam.png, id=103, 5.05771pt x 5.05771pt>
 File: images/Sam.png Graphic file (type png)
 <use images/Sam.png>
 Package pdftex.def Info: images/Sam.png  used on input line 7.
 (pdftex.def)             Requested size: 49.68864pt x 49.71799pt.
-<images/Yuepei.png, id=74, 370.0224pt x 370.0224pt>
+<images/Yuepei.png, id=105, 370.0224pt x 370.0224pt>
 File: images/Yuepei.png Graphic file (type png)
 <use images/Yuepei.png>
 Package pdftex.def Info: images/Yuepei.png  used on input line 8.
-(pdftex.def)             Req
+(pdftex.def)             Requested size: 49.68864pt x 49.6855pt.
+ [4 <./images/Pre.png> <./images/Before.png> <./images/After.png> <./images/Murtadha.jpg> <./images/Param.png> <./images/Haochen.png (PNG copy)>]) (./main.bbl (./main.brf)
+\tf@brf=\write4
+\openout4 = `main.brf'.
+
+
+
+Package natbib Warning: Empty `thebibliography' environment on input line 8.
+
+) [5
+
+ <./images/Sam.png (PNG copy)> <./images/Yuepei.png (PNG copy)>] (./main.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 8D311E208870B785BEE998B595D4CCE6;1944.
+Package rerunfilecheck Info: File `main.brf' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 15402 strings out of 476025
+ 256189 string characters out of 5790018
+ 1884388 words of memory out of 5000000
+ 35569 multiletter control sequences out of 15000+600000
+ 536648 words of font info for 88 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 90i,9n,90p,1256b,522s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (5 pages, 30336576 bytes).
+PDF statistics:
+ 177 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+

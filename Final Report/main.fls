@@ -1,8 +1,8 @@
-PWD /Users/admin/Github/CV/Final Report
+PWD /Users/admin/Github/CV_New/CV/Final Report
 INPUT /usr/local/texlive/2023/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/admin/Github/CV/Final Report/main.tex
+INPUT /Users/admin/Github/CV_New/CV/Final Report/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -853,13 +853,8 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/helvetic/phvb.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
-INPUT ./sec/3_data_analysis.tex
-INPUT ./sec/3_data_analysis.tex
-INPUT ./sec/3_data_analysis.tex
-INPUT sec/3_data_analysis.tex
-INPUT ./sec/3_data_analysis.tex
-INPUT ./sec/3_data_analysis.tex
-INPUT sec/3_data_analysis.tex
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmb.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT ./sec/4_method.tex
 INPUT ./sec/4_method.tex
 INPUT ./sec/4_method.tex
@@ -880,6 +875,16 @@ INPUT sec/6_results.tex
 INPUT ./sec/6_results.tex
 INPUT ./sec/6_results.tex
 INPUT sec/6_results.tex
+INPUT ./images/train.png
+INPUT ./images/train.png
+INPUT images/train.png
+INPUT ./images/train.png
+INPUT ./images/train.png
+INPUT ./images/QR.jpeg
+INPUT ./images/QR.jpeg
+INPUT images/QR.jpeg
+INPUT ./images/QR.jpeg
+INPUT ./images/QR.jpeg
 INPUT ./images/Pre.png
 INPUT ./images/Pre.png
 INPUT images/Pre.png
@@ -890,10 +895,6 @@ INPUT ./images/Before.png
 INPUT images/Before.png
 INPUT ./images/Before.png
 INPUT ./images/Before.png
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmb.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT ./images/After.png
 INPUT ./images/After.png
 INPUT images/After.png
@@ -906,11 +907,16 @@ INPUT sec/7_conclusion.tex
 INPUT ./sec/7_conclusion.tex
 INPUT ./sec/7_conclusion.tex
 INPUT sec/7_conclusion.tex
-INPUT ./images/train.png
-INPUT ./images/train.png
-INPUT images/train.png
-INPUT ./images/train.png
-INPUT ./images/train.png
+INPUT ./sec/8_bib.tex
+INPUT ./sec/8_bib.tex
+INPUT ./sec/8_bib.tex
+INPUT sec/8_bib.tex
+INPUT ./sec/8_bib.tex
+INPUT ./sec/8_bib.tex
+INPUT sec/8_bib.tex
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm
 INPUT ./sec/5_team.tex
 INPUT ./sec/5_team.tex
 INPUT ./sec/5_team.tex
@@ -938,6 +944,8 @@ INPUT ./images/Yuepei.png
 INPUT images/Yuepei.png
 INPUT ./images/Yuepei.png
 INPUT ./images/Yuepei.png
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/courier/pcrr7t.vf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 INPUT ./main.bbl
 INPUT main.bbl
 INPUT ./main.bbl
@@ -948,6 +956,13 @@ INPUT main.brf
 INPUT ./main.brf
 INPUT ./main.brf
 OUTPUT main.brf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri7t.tfm
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/vf/adobe/times/ptmri7t.vf
-INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
+INPUT main.aux
+INPUT ./main.out
+INPUT ./main.out
+INPUT ./main.brf
+INPUT ./main.brf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
