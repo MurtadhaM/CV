@@ -1,8 +1,10 @@
 !Build/
+.DS_Store
 .last_cover_stats
 /META.yml
 /META.json
 /MYMETA.*
+.DS_STORE
 *.o
 *.pm.tdy
 *.bs
