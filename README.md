@@ -139,3 +139,5 @@ This is a research project for the course Computer Vision at the University of N
       }
 
 
+
+### Liberty, Equality, Fraternity
