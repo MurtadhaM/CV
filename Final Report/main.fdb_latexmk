@@ -1,14 +1,6 @@
 # Fdb version 4
-["bibtex main"] 1700598619 "main.aux" "main.bbl" "main" 1700598630 0
-  "./ieeenat_fullname.bst" 1700597922 26900 a296cb1ebee73f7bfa143751dc4e1dfd ""
-  "./main.bib" 1700597922 5455 566d4211dba6ffb23734d97fa2b8bc0b ""
-  "main.aux" 1700598630 10911 747308c27b6a9fda97462aa528d5674f "pdflatex"
-  (generated)
-  "main.bbl"
-  "main.blg"
-  (rewritten before read)
-["pdflatex"] 1700598627 "/Users/admin/Github/CV_New/CV/Final Report/main.tex" "main.pdf" "main" 1700598630 0
-  "/Users/admin/Github/CV_New/CV/Final Report/main.tex" 1700598154 2486 e7c2d8584d634d0c34991ea1f058e156 ""
+["pdflatex"] 1700606995 "/Users/admin/Github/CV_New/CV/Final Report/main.tex" "main.pdf" "main" 1700606998 0
+  "/Users/admin/Github/CV_New/CV/Final Report/main.tex" 1700606991 2419 a4479b4a3ac496f341175eb220174cd5 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -140,24 +132,21 @@
   "images/Sam.png" 1700597922 42134 faa5d5c37f777a4901255ac8c994223c ""
   "images/Yuepei.png" 1700597922 37967 c0d50b116baa8af69f3f4cea90d85f75 ""
   "images/train.png" 1700597922 27091 ef6b0b65d05572bcbf28ad41981c22ab ""
-  "main.aux" 1700598630 10911 747308c27b6a9fda97462aa528d5674f "pdflatex"
-  "main.bbl" 1700598619 275 de5ffaf5b665b622658d80bed97ba2a5 "bibtex main"
-  "main.brf" 1700598630 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.out" 1700598630 1944 8d311e208870b785bee998b595d4cce6 "pdflatex"
-  "main.tex" 1700598154 2486 e7c2d8584d634d0c34991ea1f058e156 ""
+  "main.aux" 1700606998 11292 94eaffd17b08680673df6b13ddfad2ba "pdflatex"
+  "main.out" 1700606998 1944 8d311e208870b785bee998b595d4cce6 "pdflatex"
+  "main.tex" 1700606991 2419 a4479b4a3ac496f341175eb220174cd5 ""
   "preamble.tex" 1700597923 283 d6fb6e47acbd150088c4eec8eefbc415 ""
   "sec/0_abstract.tex" 1700597923 731 cbb22f85c7183b81b6ad9f46bd34d250 ""
   "sec/1_intro.tex" 1700597923 554 cc0acf86d34ace8f05618db132143586 ""
   "sec/2_problem.tex" 1700597923 992 12f1391a6ff396d600cf17793eb06e23 ""
   "sec/3_data.tex" 1700597978 4875 3b3d48ea8817c771ea7cf27e69e3d7f2 ""
   "sec/4_method.tex" 1700598018 2101 b721f1d25f900ec699087c2717b96c6d ""
-  "sec/5_team.tex" 1700597923 1178 dd353a84a11bb60c29b0929e43a905da ""
-  "sec/6_results.tex" 1700597923 2228 17914aab7428c7e26756d84305b82362 ""
+  "sec/5_team.tex" 1700606832 1192 848620a3dd4e04626e39d4ebad460bd5 ""
+  "sec/6_results.tex" 1700606944 2228 f0894494caa902ce3420d33623b15b16 ""
   "sec/7_conclusion.tex" 1700598027 1323 e2fe45da16977c6cd0bb28ae701b5701 ""
-  "sec/8_bib.tex" 1700598621 1008 222f340f15ed1298f71f28be1e285452 ""
+  "sec/8_bib.tex" 1700606644 2414 92a5e2fc7f9066af0851413f2f4f8af7 ""
   (generated)
   "main.aux"
-  "main.brf"
   "main.log"
   "main.out"
   "main.pdf"

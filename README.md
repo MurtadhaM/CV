@@ -1,12 +1,27 @@
 ##### <p align="center"> <img src="https://img.shields.io/badge/Computer--Vision-YOLOv6 Research-ff0000?style=for-the-badge" width="100%"/> </p>
 
+## Table of Contents
+- [Description](#description)
+- [Counting Students](#counting-students)
+- [Stitching Images Together](#stitching-images-together)
+- [Demo](#demo)
+- [Sequence Diagram](#sequence-diagram)
+- [Technologies](#technologies)
+- [Authors](#authors)
+- [Credits](#credits)
+
+
 ## Description
 This is a research project for the course Computer Vision at the University of North Carolina in Charlotte. The goal of this project is to implement student counting using an image. The model that was used is YOLOv6 and the dataset used is the [COCO dataset](https://cocodataset.org/#home). The model was trained on Google Colab and the results were tested on a local machine. The model was trained on 100 epochs and the results were tested on 100 images. The results were not as expected and the model was not able to detect students in the images. The model was able to detect people in the images but not students. The model was able to detect students.
 
-
-##### <p align="center"> <img src="https://img.shields.io/badge/Results-Images-ff0000?style=for-the-badge" width="200px"/> </p>
-
 ---
+
+##### <a href="https://drive.google.com/file/d/1JD6vNxip-ClIy_E0Xozcf_Hlz6KXsxek/view"><p align="center"> <img src="https://img.shields.io/badge/Report-Paper-yellow?style=for-the-badge" width="200px"/> </p></a>
+---
+
+##### <a href="https://docs.google.com/presentation/d/1KBtMGO36j1XabQgP3KVJK-smWe0HXILbsCPrjrXQbWE/edit#slide=id.g2968f33f89f_0_0"><p align="center"> <img src="https://img.shields.io/badge/Presentation-PDF-blue?style=for-the-badge" width="200px"/> </p></a>
+---
+
 #### Counting Students
 ---
 
@@ -19,7 +34,7 @@ This is a research project for the course Computer Vision at the University of N
 
 ---
 
-
+## Demo
 ##### <p align="center"><a href=https://ml.anywhererpa.com> <img src="https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge" width="200px"/> </a></p>
 
 <p align=center style="font-size:25px"><a href="https://ml.anywhererpa.com">Demo</a></p>
@@ -33,82 +48,24 @@ This is a research project for the course Computer Vision at the University of N
 
 
 ---
-
+## Sequence Diagram
 ##### <p align="center"> <img src="https://img.shields.io/badge/Sequence-Diagram-purple?style=for-the-badge" width="200px"/> </p>
 
 <p align=center><img src="./assets/sequence.png" width="100%"/></p>
 
-<!-- 
-```plantuml
-@startuml
-
-!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
-
-!include ICONURL/common.puml
-
-
-
-skinparam defaultTextAlignment center
-skinparam handwritten true
-skinparam class {
-  BackgroundColor    DarkSeaGreen
-  ArrowColor SeaGreen
-  BorderColor SeaGreen
-  FontColor white
-  HeaderFontColor white
-  iconFontColor white
-}
-
-
-
-skinparam backgroundcolor transparent
-skinparam handwritten true
-skinparam class {
-  ArrowColor green
-  BorderColor white
-  FontColor white
-  HeaderFontColor white
-
-
-}
-
-
-
-
-actor User 
-title Sequence Diagram
-participant "Web Server" as A
-participant "YOLOv6" as B
-participant "COCO Dataset" as C
-participant "OpenCV" as D
-participant "Flask" as E
-participant "Ubuntu Server" as F
-
-User -> A: User uploads image
-A -> B: Image is sent to YOLOv6
-B -> D: YOLOv6 uses OpenCV to draw bounding boxes
-D -> B: OpenCV returns image with bounding boxes
-
-E -> F: Flask sends image with bounding boxes to User
-F -> E: User sees image with bounding boxes
-E -> User: User sees image with bounding boxes
-
-![Alt text](image-2.png)
-
-@enduml
-``` -->
+## Technologies
 - [Ubuntu Server 20.04 LTS](https://ubuntu.com/download/server)
 - [Python 3.8.5](https://www.python.org/downloads/release/python-385/)
 - [YOLOv6](https://github.com/meituan/YOLOv6)
 - [COCO dataset](https://cocodataset.org/#home)
 - [Flask](https://flask.palletsprojects.com/en/2.0.x/)
 - [OpenCV](https://opencv.org/)
-
+- [Stitching](https://github.com/OpenStitching/stitching)
 
 
 
 ---
-
+## Authors
 ##### <p align="center"> <img src="https://img.shields.io/badge/Authors-Contributors-ff0000?style=for-the-badge" width="200px"/> </p>
 
 
@@ -160,7 +117,8 @@ E -> User: User sees image with bounding boxes
 - [Research Paper](https://arxiv.org/abs/2209.02976)
 - [YOLOv6](https://github.com/meituan/YOLOv6)
 - [COCO dataset](https://cocodataset.org/#home)
-
+- [Stitiching Library](https://github.com/OpenStitching/stitching)
+- [Stitching Paper For the Bonus](http://hdl.handle.net/20.500.11970/112696)
 
       @misc{li2022yolov6,
             title={YOLOv6: A Single-Stage Object Detection Framework for Industrial Applications}, 
